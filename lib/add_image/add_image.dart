@@ -4,12 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 
 class AddImage extends StatefulWidget {
+
   const AddImage(this.addImageFunc, {Key? key}) : super(key: key);
-
   final Function(File pickedImage) addImageFunc;
-
   @override
-  _AddImageState createState() => _AddImageState();
+  State<AddImage> createState() => _AddImageState();
 }
 
 class _AddImageState extends State<AddImage> {
@@ -19,9 +18,10 @@ class _AddImageState extends State<AddImage> {
   void _pickImage() async {
     final imagePicker = ImagePicker();
     final pickedImageFile = await imagePicker.pickImage(
-      source: ImageSource.camera,
-      imageQuality: 50,
-      maxHeight: 150
+      //  source: ImageSource.camera,
+        source: ImageSource.gallery,
+        imageQuality: 50,
+        maxHeight: 150
     );
     setState(() {
       if(pickedImageFile !=null) {
@@ -50,9 +50,9 @@ class _AddImageState extends State<AddImage> {
           OutlinedButton.icon(
             onPressed: () {
               _pickImage();
-            },
+              },
             icon: Icon(Icons.image),
-            label: Text('Add image'),
+            label: Text('Add icon'),
           ),
           SizedBox(
             height: 80,
