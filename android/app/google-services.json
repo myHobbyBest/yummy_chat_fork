@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "250722019975",
-    "project_id": "chat-app-e6f5d",
-    "storage_bucket": "chat-app-e6f5d.appspot.com"
+    "project_number": "1014782601972",
+    "project_id": "fir-chat-b19d6",
+    "storage_bucket": "fir-chat-b19d6.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:250722019975:android:3ea74393dae81031f6a622",
+        "mobilesdk_app_id": "1:1014782601972:android:07f05e1667e27678c58ca1",
         "android_client_info": {
-          "package_name": "com.example.yummy_chat_lecture3"
+          "package_name": "com.example.firebase_chat"
         }
       },
       "oauth_client": [
         {
-          "client_id": "250722019975-lvocsu6on7o4kvq1knj6btc2r68q3otj.apps.googleusercontent.com",
+          "client_id": "1014782601972-7brj83lfj5u9ij7i29hrkmdk4tmg5be0.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAew59ffalTQSFo6lkDZ4wMeyth0n-Qces"
+          "current_key": "AIzaSyBldUNP5r8UYaf66lM9ecUdaDC24YLG0Xk"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "250722019975-lvocsu6on7o4kvq1knj6btc2r68q3otj.apps.googleusercontent.com",
+              "client_id": "1014782601972-7brj83lfj5u9ij7i29hrkmdk4tmg5be0.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
