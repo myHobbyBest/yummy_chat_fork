@@ -1,14 +1,15 @@
+
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:yummy_chat_lecture3/chatting/chat/message.dart';
-import 'package:yummy_chat_lecture3/chatting/chat/new_message.dart';
+
+import '../chatting/chat/message.dart';
+import '../chatting/chat/new_message.dart';
 
 class ChatScreen extends StatefulWidget {
   const ChatScreen({Key? key}) : super(key: key);
 
   @override
-  _ChatScreenState createState() => _ChatScreenState();
+  State<ChatScreen> createState() => _ChatScreenState();
 }
 
 class _ChatScreenState extends State<ChatScreen> {
@@ -37,9 +38,7 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Chat screen'),
-        actions: [
+        appBar: AppBar(title: Text('Chat screen'), actions: [
           IconButton(
             icon: Icon(
               Icons.exit_to_app_sharp,
@@ -47,21 +46,18 @@ class _ChatScreenState extends State<ChatScreen> {
             ),
             onPressed: () {
               _authentication.signOut();
-              //Navigator.pop(context);
             },
-          )
-        ],
-      ),
-      body: Container(
-        child: Column(
-          children: [
-            Expanded(
-              child: Messages(),
-            ),
-            NewMessage(),
-          ],
-        ),
-      ),
-    );
+          ),
+        ]),
+        body: Container(
+          child: Column(
+            children: [
+              Expanded(
+                child: Messages(),
+              ),
+              NewMessage(),
+            ],
+          ),
+        ));
   }
 }
